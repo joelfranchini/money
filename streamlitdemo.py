@@ -25,7 +25,7 @@ if options=="-----":
 elif options=='Uscita':
     option_uscita = st.selectbox('Che tipo di uscita è?',('Mangiare fuori', 'Spesa base (benzina/alimenti)', 'Sfizi', 'Beneficienza', 'Caffè', 'Amazon', 'Regali obbligati'))
     st.write('Hai selezionato una ',options,'avvenuta il giorno ',str(data),'con causale ',  option_uscita)
-else:
+elif options=='Entrata':
     option_entrata = st.selectbox('Che tipo di entrata è?',('Stipendio', 'Bonifico Parenti', 'PoliMi'))
     st.write('Hai selezionato una ',options,', avvenuta il giorno ',str(data),', con causale ',  option_entrata)
 
@@ -36,7 +36,7 @@ if tripletta=="0-200 €":
     cifra=st.slider("Inserisci la cifra: ", 0,200)
 elif options=='201-1000 €':
     cifra=st.slider("Inserisci la cifra: ", 201,1000)
-else:
+elif options=='1001-3000 €':
     cifra=st.slider("Inserisci la cifra: ", 1001,3000)
 
 st.write(str(cifra), '€')

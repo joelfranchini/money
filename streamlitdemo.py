@@ -34,9 +34,9 @@ tripletta=st.radio("In che range è la cifra?", ('0-200 €','201-1000 €','100
 
 if tripletta=="0-200 €":
     cifra=st.slider("Inserisci la cifra: ", 0,200)
-elif options=='201-1000 €':
+elif tripletta=='201-1000 €':
     cifra=st.slider("Inserisci la cifra: ", 201,1000)
-elif options=='1001-3000 €':
+elif tripletta=='1001-3000 €':
     cifra=st.slider("Inserisci la cifra: ", 1001,3000)
 
 st.write(str(cifra), '€')

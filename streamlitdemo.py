@@ -12,8 +12,10 @@ data=st.date_input("Movimento relativo al giorno (YYYY/MM/DD):")
 #data=st.date_input("per il giorno", value=None, key=None, help=None
 #st.write('Hai selezionato:', data)
 
-if st.button('Hit me')
-st.write('Pippo')
+if st.button('Hit me'):
+    st.write('Pippo')
+else:
+    pass
 
 options = st.selectbox('Che tipo di movimento stai per introdurre?',('-----', 'Entrata', 'Uscita'))
 #st.write('Hai selezionato:', options)
